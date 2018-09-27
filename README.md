@@ -1,4 +1,9 @@
-# vue-rx-study
+# Vue Rx Study
+
+`
+Vue + Typsecript with Class Base Compoennt Study project
+`
+
 
 ## Project setup
 ```

@@ -1,13 +1,19 @@
 import Vue from 'vue';
+import VueRx from 'vue-rx';
 import App from './App.vue';
 import router from './router';
 import store from './store';
 import './registerServiceWorker';
+import Rx from "rxjs/Rx";
 
 Vue.config.productionTip = false;
 
-new Vue({
+Vue.use(VueRx, Rx);
+
+const vm = new Vue({
   router,
   store,
-  render: (h) => h(App),
-}).$mount('#app');
+  render: h => h(App)
+}).$mount("#app");
+
+console.log(vm.$observables);
