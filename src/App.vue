@@ -8,6 +8,19 @@
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import AlertService from '@/services/AlertService';
+
+@Component({
+  provide: {
+    AlertService,
+  },
+})
+export default class App extends Vue {}
+</script>
+
+
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

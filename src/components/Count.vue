@@ -13,9 +13,9 @@ import { Component, Vue } from 'vue-property-decorator';
         const interval$ = interval(1000);
 
         return {
-            interval$
-        }
-  }
+            interval$,
+        };
+  },
 })
 export default class Count extends Vue {}
 </script>
